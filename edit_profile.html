@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<!------------------ HEAD --------------------------->
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IQ GROUPS | Изменение профиля</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+	<link href="/style/style.css" rel="stylesheet">
+</head>
+<!------------------ END HEAD ----------------------->
+
+<!------------------ HEADER ------------------------->
+<body>
+		<div class="container">
+			<div class="row">
+				<div id="main_menu" class="col-12">
+
+					<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="index.html"><img class="main_logo" src="/images/logo.png"></a>
+						  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+						    	<span class="navbar-toggler-icon"></span>
+						  	</button>
+
+						  	<div class="" id="navbar1">
+						  		<div class="phone_menu_header">
+						  			<div class="close_menu float-left" id="close_menu"></div>
+						  			<div class="logo_menu float-right"><img src="/images/menu_header_logo_1.png"></div>
+						  		</div>
+						    	<ul class="navbar-nav mr-auto">
+						      		<li class="nav-item">
+						        		<a class="nav-link" href="main_stock.html">Акция-эксклюзив</a>
+						        		<span class="menu_arrow"></span>
+						      		</li>
+								    <li class="nav-item">
+								    	<a class="nav-link" href="conditions.html">Условия акции</a>
+								    	<span class="menu_arrow"></span>
+								    </li>
+								    <li class="nav-item">
+								    	<a class="nav-link" href="register.html">Регистрация участника</a>
+								    	<span class="menu_arrow"></span>
+								    </li>
+								    <li class="nav-item" style="display:none;">
+								    	<a class="nav-link" href="rating.html">Рейтинг участников</a>
+								    	<span class="menu_arrow"></span>
+								    </li>
+								    <li class="nav-item" style="display:none;">
+								    	<a class="nav-link" href="lk_user.html">Кабинет участника</a>
+								    	<span class="menu_arrow"></span>
+								    </li>
+								    <li class="nav-item" style="display:none;">
+								    	<a class="nav-link" href="lk_partner.html">Кабинет партнера</a>
+								    	<span class="menu_arrow"></span>
+								    </li>
+								    <li class="nav-item">
+								    	<a class="nav-link" href="index.html">Главная</a>
+								    	<span class="menu_arrow"></span>
+								    </li>
+								    <li class="nav-item" style="display:none;">
+								    	<a class="nav-link" href="our_keys.html">Наши кейсы</a>
+								    	<span class="menu_arrow"></span>
+								    </li>
+
+						    	</ul>
+						    	<div class="phone_menu_footer">
+						    		
+						    	</div>
+						  	</div>
+						</nav>
+				</div>
+			</div>
+		</div>
+<!------------------ END HEADER --------------------->
+<!------------------ MAIN BODY ---------------------->
+
+<div class="main_body" id="register">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 t_1">
+				<div class="t_1_head_text_2 text-center">
+					<p>Редактировать профиль<br>дизайнера<br><br></p>
+				</div>
+				<div class="text_border"></div>
+				<a class="btn btn-primary text-center btn_register_1" href="#" role="button">ПЕРЕЙТИ К ФОРМЕ</a>
+				<div class="arrow_down"><img src="/images/arrow.png"></div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<form id="edit_profile" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-12 col-md-6 str_block name_str">
+					<span class="register_str_title">Имя и фамилия<span class="red">*</span></span><br>
+					<input type="text" name="name" placeholder="Ваши имя и фамилия" required><br>
+					<!-- <span class="hidden error">*Заполните поле</span> -->
+				</div>
+				<div  class="col-12 col-md-6 str_block photo_str">
+					<span class="register_str_title">Загрузите свое фото</span><br>
+					<span id="output"><img src="/images/default_photo.png" class="thumb_photo"></span>
+					<label for="file" class="choose_btn">Выбрать файл</label>
+					<input type="file" id="file" name="file" accept="image/*,image/jpeg">
+				</div>
+				<div class="col-12 col-md-6 str_block site_str">
+					<span class="register_str_title">Ваш сайт</span><br>
+					<input type="text" name="site" placeholder="Адрес страницы Вашего сайта" ><br>
+					<!-- <span class="hidden error">*Заполните поле</span> -->
+				</div>
+				<div class="col-12 col-md-6 str_block social_str">
+					<span class="register_str_title">Аккаунты в соцсетях</span>
+					<div class="clearfix"></div>
+					<img src="/images/vk_logo.png" class="social_links_img sl_1"><input type="text" name="social_links_1" placeholder="Адрес аккаунта">
+					<img src="/images/fb_logo.png" class="social_links_img sl_2"><input type="text" name="social_links_2" placeholder="Адрес аккаунта">
+					<img src="/images/insta_logo.png" class="social_links_img sl_3"><input type="text" name="social_links_3" placeholder="Адрес аккаунта">
+				</div>
+				<div class="col-12 col-md-6 str_block phone_str">
+					<span class="register_str_title">Ваш телефон<span class="red">*</span></span>
+					<p>Для оперативной связи с Вами</p>
+					<input type="phone" id="phone" name="phone" placeholder="Введите Ваш телефон"  required>
+					<!-- <span class="hidden error">*Заполните поле</span> -->
+				</div>
+				<div class="col-12 col-md-6 str_block email_str">
+					<span class="register_str_title">Ваш E-mail<span class="red">*</span></span><br>
+					<p>Чтобы раз в неделю получать информацию о промежуточных результатах акции</p>
+					<input type="email" name="email" placeholder="Введите свой e-mail"  required>
+					<!-- <span class="hidden error">*Заполните поле</span> -->
+				</div>
+				<div class="col-12">
+					<input type="submit" id="send_form" name="send_form" value="ВНЕСТИ ИЗМЕНЕНИЯ" class="btn btn-primary text-center btn_register_3">
+				</div>
+			</div>
+		</form>
+		<!-- <div class="row" id="success_register" style="display: none;">
+			<div class="col-12">
+				<div class="thanks_title_1 text-center">СПАСИБО!</div>
+				<div class="thanks_title_2 text-center">
+				ВЫ УСПЕШНО ЗАРЕГИСТРИРОВАЛИСЬ.</div>
+				<div class="hr white_bg"></div>
+				<div class="thanks_title_2 text-center">Для дальнейшей работы
+				вы можете:</div>
+				<a href="lk.html" class="btn btn-primary text-center btn_register_2" style="display: none;">Перейти в личный кабинет</a>
+				<a href="index.html" class="btn btn-primary text-center btn_register_4">Узнать условия акции</a>
+			</div>
+		</div> -->
+	</div>
+
+</div>
+
+
+<!------------------ END MAIN BODY ------------------>
+<!------------------ FOOTER ------------------------->
+<footer class="container-fluid">
+	<div class="row">
+		<div class="col-12 text-center">© 2018</div>
+	</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<script src="/scripts/main.js"></script>
+<script type="text/javascript">
+	document.getElementById('file').addEventListener('change', handleFileSelectSingle, false);
+</script>
+<!------------------ END FOOTER --------------------->
+</body>
+</html>
