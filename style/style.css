@@ -2738,3 +2738,52 @@ hr{
 .key_page .object p span{
 	font-weight: 700;
 }
+
+.rating_table{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.rating_table tr td{
+	border: 1px solid #bfc3d3;
+	height: 40px;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	white-space: nowrap;]
+	font-size: 16px;
+	font-weight: 500;
+}
+.rating_table tr td:nth-child(1){
+	width: 0px;
+	border: none;
+}
+.rating_table tr.ready td:nth-child(1){
+	width: 40px;
+	background: url(/images/ready_rating.png);
+	background-size: 86% 86%; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.rating_table tr td:nth-child(2){
+	width: 40px;
+}
+.rating_table tr.ready{
+	color: #ffffff;
+}
+.rating_table tr.ready td:nth-child(2),
+.rating_table tr.ready td:nth-child(3),
+.rating_table tr.ready td:nth-child(4){
+	background-color: #c11525;
+	border-right-color: #ffffff;
+	border-left-color: #ffffff;
+}
+.rating_table tr.ready td:nth-child(2){
+	border-left-color: #c11525!important;
+}
+.rating_table tr.ready td:nth-child(4){
+	border-right-color: #c11525!important;
+}
+.rating_table tr td:nth-child(4){
+	width: 90px;
+}
+
