@@ -1342,12 +1342,15 @@ footer .row .col-12{
 }
 .lk_panel_block .lk_panel_right div{
 	border-bottom: 1px solid #c8ccda;
-	padding: 10px 0px; 
+	padding: 9px 0px; 
 	font-size: 14px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: stretch;
+}
+.lk_panel_block .lk_panel_right div:nth-child(1){
+	padding-top: 0px; 
 }
 .lk_panel_block .lk_panel_right div span{
 	flex: 0 0 85px;
@@ -1403,7 +1406,6 @@ footer .row .col-12{
 }
 .user_stat .time_remaining div span{
 	padding:0px !important;
-	border: 1px solid #bfc3d3;
 	margin-right: -7px;
 }
 .user_stat .time_remaining div span.t_space{
@@ -2658,8 +2660,10 @@ hr{
 	font-size: 16px;
 	font-weight: 500;
 	background: transparent!important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-	line-height: 22px;
 }
 .t_score div .content_score span{
 	font-size: 24px;
