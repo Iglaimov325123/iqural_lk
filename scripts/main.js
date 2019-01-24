@@ -130,7 +130,14 @@ $(document).ready(function () {
     
         // $.fancybox.close(true);
     
+    
+
   });
 
-
+$("#time_remain")
+  .countdown("2019/12/13", function(event) {
+    $(this).text(
+      event.strftime('%D дней')
+    );
+  });
 
