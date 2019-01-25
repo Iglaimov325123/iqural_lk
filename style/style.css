@@ -466,6 +466,7 @@ footer .row .col-12{
 
 
 @media (max-width: 480px){ 
+
 	.rating_table tr td{
 		font-size: 14px!important;
 	}
@@ -2186,7 +2187,8 @@ hr{
 	background-position: center !important;
 	background-repeat: no-repeat !important;
 	position: absolute;
-	margin:-26px 0px 0px 315px;
+	margin:-26px 0px 0px 0px;
+	right: 30px;
 	background: url("/images/see_pass.png");
 	/*background: url("/images/not_see_pass.png");*/
 }
