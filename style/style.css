@@ -466,7 +466,11 @@ footer .row .col-12{
 
 
 @media (max-width: 480px){ 
-
+	.sponsor_top_bg{
+	background: url(/images/sponsor_top_bg.png);
+	background-size: cover;
+	height: 300px;
+}
 	.rating_table tr td{
 		font-size: 14px!important;
 	}
@@ -1415,8 +1419,9 @@ footer .row .col-12{
 }
 
 .sponsor_top_bg{
-	background: url(/images/sponsor_top_bg.png);
+	background: url(/images/sponsor_top_bg_lg.png);
 	background-size: cover;
+	background-position: center;
 	height: 300px;
 }
 .black{
