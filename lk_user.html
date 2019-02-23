@@ -7,6 +7,8 @@
 	<title>IQ GROUP | Кабинет участника</title>
 	<link href="/style/style.css?ver=1.0" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/style/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/style/slick-theme.css"/>
 </head>
 <!------------------ END HEAD ----------------------->
 
@@ -78,6 +80,7 @@
 			<div class="row">
 				<div class="col-12">			
 					<h3 class="text-center">Никитин Иван</h3>
+					<div class="register_day">Дата регистраци <span>24 февраля 2019 года</span></div>
 					<div class="hr bg_red text-center"></div>
 					<!-- <div class="lk_title">
 						
@@ -88,61 +91,297 @@
 								<img src="/images/lk_photo.png">						
 							</div>
 							<div class="btn_edit_profile">
-								<span class="btn_img"></span><span class="btn_txt">Редактировать профиль</span>
+								Редактировать профиль
 							</div>
 						</div>
 						<div class="lk_panel_right">
-							<div class="my_email">
-								<span>Мой сайт:</span>
-								<input type="text" name="my_site" value="example.com" alt="example.com" readonly>
+							<div class="phone">
+								<span>Телефон</span>
+								<input type="text" name="phone" value="+7(000)000 00 00" readonly>
 							</div>
 							<div class="my_site">
-								<span>Мой e-mail:</span>
-								<input type="text" name="my_email" value="contact@example.com" alt="contact@example.com" readonly>
+								<span>Веб-сайт:</span>
+								<input type="text" name="my_site" value="example.com" alt="example.com" readonly>
 							</div>
-							<div class="my_phone">
-								<span>Мой тел.:</span>
-								<input type="phone" name="my_phone" value="+7 (208) 333 9296" readonly>
+							<div class="my_email">
+								<span>E-mail:</span>
+								<input type="email" name="my_email" value="myemail@example.com" readonly>
 							</div>
 							<div class="my_socials">
-								<span>Мои соцсети:</span>
+								<span>Социальные сети:</span>
 								<a href=""><img src="/images/vk_logo.png"></a>
 								<a href=""><img src="/images/fb_logo.png"></a>
 								<a href=""><img src="/images/insta_logo.png"></a>
 								<a href=""><img src="/images/tw_logo.png"></a>
 							</div>
+							<div class="points_num">
+								<span>Набрано баллов:</span>
+								<div>854</div>
+							</div>
+							<div class="remaining_points">
+								<span>Осталось набрать баллов:</span>
+								<div>1000</div>
+							</div>
 						</div>
 					</div>
-					<div class="clearfix"></div>
-					<div class="user_stat">
-						<div class="user_score text-center">
-							<span>Набрано баллов:</span>
-							<div>1300</div>
-						</div>
-						<div class="time_remaining text-center">
-							<span class="title">До окончания акции осталось:</span>
-							<div>
-								<span id="time_remain"></span>
-							</div>	
-						</div>
-					</div>
-
-
+					<div class="clearfix"></div>	
+					
 				</div>
-				<div class="col-12">
-					<p class="red" style="font-size: 14px;">*баллы назначаются только при отгрузке и полной оплате</p>
-				</div>
+			</div>
+			<div class="row time_block">
+				<p>До окончания акции осталось:</p>
+				<div class="time_remaining_div" id="time_remain"> </div>
 			</div>
 			<div class="row t_score">
 				<div class="col-12">
 					<div class="content_score">
-						Заказ у следующего Партнера даст +10% к начисляемым баллам./	
-						Размести заказ у каждого партнера и получи до +60% к баллам!
+						Заказ у следующего Партнера откроет коофицент.
+						<br><span>1.1</span>
+						<!-- Размести заказ у каждого партнера и получи до +60% к баллам! -->
 					</div>
 				</div>
 				
 			</div>	
-			<div class="row t_8">
+
+			<div class="row">
+				<table class="table_sponsor">
+					<thead>
+						<td>
+							
+						</td>
+						<td>
+							Баллы:
+						</td>
+						<td>
+							Коэффициент:
+						</td>
+						<td>
+							Итого:
+						</td>
+					</thead>
+					<tr>
+						<td>
+							<div class="logo_table nolte"></div>
+						</td>	
+						<td>
+							0000
+						</td>	
+						<td>
+							0.0
+						</td>	
+						<td>
+							0000
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<div class="logo_table iq"></div>
+						</td>	
+						<td>
+							0000
+						</td>	
+						<td>
+							0.0
+						</td>	
+						<td>
+							0000
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<div class="logo_table lucido"></div>
+						</td>	
+						<td>
+							0000
+						</td>	
+						<td>
+							0.0
+						</td>	
+						<td>
+							0000
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<div class="logo_table forma_sveta"></div>
+						</td>	
+						<td>
+							0000
+						</td>	
+						<td>
+							0.0
+						</td>	
+						<td>
+							0000
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<div class="logo_table caparol"></div>
+						</td>	
+						<td>
+							0000
+						</td>	
+						<td>
+							0.0
+						</td>	
+						<td>
+							0000
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<div class="logo_table teplof"></div>
+						</td>	
+						<td>
+							0000
+						</td>	
+						<td>
+							0.0
+						</td>	
+						<td>
+							0000
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<div class="logo_table bangroom"></div>
+						</td>	
+						<td>
+							0000
+						</td>	
+						<td>
+							0.0
+						</td>	
+						<td>
+							0000
+						</td>	
+					</tr>
+				</table>
+				<div class="col-12">
+					<p class="table_note">
+						* 1 балл = 2000 рублей (начисляются при отгрузке и полной оплате). Коэффициенты распределяются от большего к меньшему (max коэффициент у min заказа).
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="pres_block">
+			<div class="present_1"></div>
+			<div class="h3_presents">АКЦИИ ПАРТНЕРОВ</div>
+			<div class="present_2"></div>
+		</div>
+		<div class="h3_lk col-12">IQGROUP</div>
+		<div class="slider_3 slider_lk">
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+		</div>
+		<div class="h3_lk col-12">CAPAROL</div>
+		<div class="slider_3 slider_lk">
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+		</div>
+		<div class="h3_lk col-12">BAGNOROOM</div>
+		<div class="slider_3 slider_lk">
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+		</div>
+		<div class="h3_lk col-12">Nolte Design Studio</div>
+		<div class="slider_3 slider_lk">
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+		</div>
+		<div class="h3_lk col-12">ТЕПЛОФФ</div>
+		<div class="slider_3 slider_lk">
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+		</div>
+		<div class="h3_lk col-12">LUCIDO</div>
+		<div class="slider_3 slider_lk">
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+			<div class="slide">
+				<img src="/images/about_img_3.png">
+			</div>
+		</div>
+			
+
+
+			<!-- <div class="row t_8">
 				<div class="col-12">
 					<h3 class="text-center">ПАРТНЕРЫ АКЦИИ</h3>
 					<div class="row">
@@ -155,8 +394,8 @@
 						<div class="sponsor_logo"><a href="https://www.instagram.com/bagnoroom/" target="_blank"><img src="/images/sponsor_logo_7.png"></a></div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div> -->
+		
 	</div>
 
 <!------------------ END MAIN BODY ------------------>
@@ -172,6 +411,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" crossorigin="anonymous"></script>
 <script src="/scripts/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="/scripts/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script src="/scripts/main.js"></script>
 <!------------------ END FOOTER --------------------->
 </body>

@@ -116,6 +116,10 @@ $(document).ready(function () {
       autoplay: false,
       dots: true
     });
+    $('.slider_lk').slick({
+      autoplay: false,
+      dots: true
+    });
 
     // $('.lights_exapmle').on('click', function(){
     //   var name_modal = $(this).data('modal');
@@ -136,8 +140,8 @@ $(document).ready(function () {
 
 $("#time_remain")
   .countdown("2019/12/13", function(event) {
-    $(this).text(
-      event.strftime('%D дней')
+    $(this).html(
+      event.strftime('<span>%D дней</span> %H ч %m мин %S сек')
     );
   });
 
