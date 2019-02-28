@@ -2121,6 +2121,7 @@ hr{
 .users_table tr.user td:nth-child(2){
 	border: 1px solid #bfc3d3;
 	padding: 0px !important;
+	font-size: 12px;
 }
 .users_table tr.user td:nth-child(2) span{
 	display: block;
