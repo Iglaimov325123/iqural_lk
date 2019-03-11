@@ -437,10 +437,28 @@ h3{
 .sponsor_logo_b{
 	width: 95px;
 	margin: 10px;
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 480px){
+	.sponsor_logo_b{
+		width: 50%!important;
+		margin: 10px 0px;
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		justify-content: center;s
+	}	
+	.sponsor_logo img{
+		width: 80%;
+		margin: 0px;
+	}
 }
 .sponsor_logo_b img{
 	width: 100%;
 	margin: 0px;
+	display: flex;
 }
 .sponsor_logo img{
 	width: 100%;
